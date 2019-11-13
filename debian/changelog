@@ -1,0 +1,5 @@
+u-boot (2019.10+olimex-1) UNRELEASED; urgency=medium
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- stefan <stefan@olimex.com>  Wed, 13 Nov 2019 14:11:49 +0200

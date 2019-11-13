@@ -1,0 +1,13 @@
+add-debian-revision-to-u-boot-version
+olinuxino/0000-common-board-definitions.patch
+olinuxino/0001-common-eeprom.patch
+olinuxino/0002-common-get-board-name.patch
+olinuxino/0100_olinuxino_a64_support.patch
+olinuxino/0101_olinuxino_a64_disable_mmc1_in_uboot.patch
+olinuxino/0102_olinuxino_a64_load_env_from_ext4.patch
+olinuxino/0103_olinuxino_a64_spi_flash.patch
+olinuxino/0104_olinuxino_a64_detect_board.patch
+olinuxino/0105_olinuxino_a64_fit_best_match.patch
+olinuxino/0106_olinuxino_a64_load_overlays.patch
+olinuxino/0107_olinuxino_a64_disable_ethernet_on_phy_rst.patch
+olinuxino/1000_libfdt_fix_relative_path_length.patch
