@@ -75,7 +75,7 @@ cp -p $TARGET/*.dtb $TARGET/*.bin .
 BL31=$BL31 $FIT_GENERATOR *.dtb > u-boot.its
 mkimage -f u-boot.its u-boot.itb
 echo "Writing sunxi-spl"
-#dd conv=notrunc if=sunxi-spl.bin of="$DEV" bs=8k seek=1
+dd conv=notrunc if=sunxi-spl.bin of="$DEV" bs=8k seek=1
 echo "Writing u-boot FIT image"
-#dd conv=notrunc if=u-boot.itb of="$DEV" bs=8k seek=5
-#sync "$DEV"
+dd conv=notrunc if=u-boot.itb of="$DEV" bs=8k seek=5
+sync "$DEV"
