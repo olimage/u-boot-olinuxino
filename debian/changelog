@@ -1,6 +1,8 @@
 u-boot (2019.10+olimex-1) UNRELEASED; urgency=medium
 
+  [ Stefan Mavrodiev ]
   * debian: Initial packaging
   * debian: add u-boot-install script
+  * debian: Override lintian warnings
 
- -- Stefan Mavrodiev <stefan@olimex.com>  Thu, 21 Nov 2019 10:21:49 +0200
+ -- Stefan Mavrodiev <stefan@olimex.com>  Thu, 21 Nov 2019 10:43:25 +0200

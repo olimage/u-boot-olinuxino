@@ -1,8 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Das U-Boot
 Source: ftp://ftp.denx.de/pub/u-boot/
-Files-Excluded:
-  drivers/dma/MCD_tasks.c
 
 Files: *
 Copyright: 2000-2013 Wolfgang Denk <wd@denx.de>
@@ -110,7 +108,7 @@ Copyright: 2000-2013 Wolfgang Denk <wd@denx.de>
  2013 Synopsys, Inc. (www.synopsys.com)
 License: GPL-2
 
-Files: 
+Files:
  drivers/tpm/tpm_atmel_twi.c
  drivers/gpio/tca642x.c
  include/splash.h
@@ -136,10 +134,10 @@ Files:
  arch/arm/mach-exynos/clock_init_exynos4.c
  arch/arm/mach-exynos/common_setup.h
  arch/arm/mach-omap2/am33xx/clock_ti816x.c
-Copyright: 
+Copyright:
   2013 Texas Instruments, Inc
   2013, Boundary Devices <info@boundarydevices.com>
-  2006 David Gibson, IBM Corporation 
+  2006 David Gibson, IBM Corporation
   2012 Kim Phillips, Freescale Semiconductor
   2010-2013 Freescale Semiconductor, Inc
   2013 Marek Vasut <marex@denx.de>
@@ -149,7 +147,7 @@ Copyright:
   2013 NVIDIA Corporation
   2011 The Chromium OS Authors
   2013 Samsung Electronics
-  2013, Adeneo Embedded <www.adeneo-embedded.com> 
+  2013, Adeneo Embedded <www.adeneo-embedded.com>
   2009, Texas Instruments, Incorporated
 License: GPL-2+
 
@@ -368,7 +366,7 @@ License: LGPL-2.1
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  Lesser General Public License for more details.
- . 
+ .
  You should have received a copy of the GNU Lesser General Public
  License along with this library; if not, write to the Free Software
  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
