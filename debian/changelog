@@ -4,5 +4,6 @@ u-boot (2019.10+olimex-1) UNRELEASED; urgency=medium
   * debian: Initial packaging
   * debian: add u-boot-install script
   * debian: Override lintian warnings
+  * debian: Replace u-boot-sunxi
 
- -- Stefan Mavrodiev <stefan@olimex.com>  Thu, 21 Nov 2019 10:43:25 +0200
+ -- Stefan Mavrodiev <stefan@olimex.com>  Fri, 22 Nov 2019 08:59:35 +0200
