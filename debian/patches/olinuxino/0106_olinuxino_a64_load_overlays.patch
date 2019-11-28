@@ -1,16 +1,17 @@
 --- a/board/olimex/a64_olinuxino/board.c
 +++ b/board/olimex/a64_olinuxino/board.c
-@@ -449,6 +449,9 @@
+@@ -449,6 +449,10 @@
  int ft_board_setup(void *blob, bd_t *bd)
  {
  	int __maybe_unused r;
 +	int ret;
 +	char cmd[128];
 +	char *overlay;
++	void *backup;
  
  	/*
  	 * Call setup_environment again in case the boot fdt has
-@@ -461,6 +464,44 @@
+@@ -461,6 +465,56 @@
  	if (r)
  		return r;
  #endif
@@ -23,6 +24,14 @@
 +	/* Remove optional new line */
 +	if (*(overlay + strlen(overlay) - 1) == '\n')
 +		*(overlay + strlen(overlay) - 1) = 0;
++
++	/* Make a backup of the original blob */
++	backup = malloc(fdt_totalsize(blob));
++	if (!backup) {
++		printf("Failed to make backup copy.\n");
++		return 0;
++	}
++	memcpy(backup, blob, fdt_totalsize(blob));
 +
 +	/* Increase size */
 +	ret = fdt_increase_size(blob, 0x1000);
@@ -46,7 +55,11 @@
 +		ret = run_command("fdt apply 0x4fc00000", 0);
 +		if (ret) {
 +			printf("Failed to apply overlay.\n");
-+			goto err;
++
++			printf("Restoring the original FDT blob...\n");
++			memcpy(blob, backup, fdt_totalsize(backup));
++			fdt_set_totalsize(blob, fdt_totalsize(backup));
++			return 0;
 +		}
 +err:
 +		overlay = strtok(NULL, " ");
