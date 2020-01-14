@@ -3,7 +3,7 @@ boot and can be helpful to determine which specific version is used.
 
 --- a/Makefile
 +++ b/Makefile
-@@ -401,7 +401,7 @@
+@@ -424,7 +424,7 @@
  
  # Read UBOOTRELEASE from include/config/uboot.release (if it exists)
  UBOOTRELEASE = $(shell cat include/config/uboot.release 2> /dev/null)

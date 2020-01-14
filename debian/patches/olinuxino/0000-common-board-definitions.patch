@@ -1,6 +1,6 @@
 --- /dev/null
 +++ b/board/olimex/common/boards.h
-@@ -0,0 +1,51 @@
+@@ -0,0 +1,48 @@
 +/*
 + * SPDX-License-Identifier: (GPL-2.0+ OR MIT)
 + *
@@ -11,8 +11,6 @@
 + */
 +#ifndef __BOARDS_H
 +#define __BOARDS_H
-+
-+#include <linux/sizes.h>
 +
 +enum olinuxino_storage {
 +	STORAGE_NONE = 0,
@@ -25,7 +23,6 @@
 +	GRADE_COM = 0,
 +	GRADE_IND = 1,
 +};
-+
 +
 +enum olinuxino_sizes {
 +	S_1 = 0, S_2, S_4, S_8, S_16, S_32, S_64, S_128, S_256, S_512

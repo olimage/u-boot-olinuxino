@@ -1,6 +1,6 @@
 --- a/board/olimex/common/boards.h
 +++ b/board/olimex/common/boards.h
-@@ -47,5 +47,6 @@
+@@ -44,5 +44,6 @@
  };
  
  extern struct olinuxino_boards olinuxino_boards[];

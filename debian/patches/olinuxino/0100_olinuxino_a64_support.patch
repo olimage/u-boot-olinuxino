@@ -539,7 +539,7 @@
 +#endif
 --- a/arch/arm/mach-sunxi/Kconfig
 +++ b/arch/arm/mach-sunxi/Kconfig
-@@ -318,6 +318,22 @@
+@@ -321,6 +321,22 @@
  	default y if MACH_SUN8I_R40
  	default y if MACH_SUN8I_V3S
  
@@ -562,7 +562,7 @@
  config RESERVE_ALLWINNER_BOOT0_HEADER
  	bool "reserve space for Allwinner boot0 header"
  	select ENABLE_ARM_SOC_BOOT0_HOOK
-@@ -539,6 +555,7 @@
+@@ -542,6 +558,7 @@
  	default 1008000000 if MACH_SUN9I
  	default 888000000 if MACH_SUN50I_H6
  
@@ -570,7 +570,7 @@
  config SYS_CONFIG_NAME
  	default "sun4i" if MACH_SUN4I
  	default "sun5i" if MACH_SUN5I
-@@ -551,10 +568,15 @@
+@@ -554,10 +571,15 @@
  
  config SYS_BOARD
  	default "sunxi"

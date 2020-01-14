@@ -16,7 +16,7 @@
 +CONFIG_SPI_FLASH_MTD=y
 --- a/arch/arm/mach-sunxi/Kconfig
 +++ b/arch/arm/mach-sunxi/Kconfig
-@@ -329,6 +329,7 @@
+@@ -332,6 +332,7 @@
  
  config TARGET_A64_OLINUXINO
  	bool "A64-OLinuXino board"
